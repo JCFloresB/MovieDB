@@ -1,0 +1,198 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+gradle.properties
+local.properties
+
+# Gradle wrapper files (opcional, algunos equipos prefieren incluirlos)
+#gradle/wrapper/gradle-wrapper.jar
+#gradle/wrapper/gradle-wrapper.properties
+
+# Local configuration file
+local.properties
+
+# Android Studio
+*.iml
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/misc.xml
+.navigation/
+captures/
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+.cxx/
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+google-services/*.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+vcs.xml
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint/reports/
+
+# Sonarlint & Sonarqube
+.sonar/
+.sonarqube/
+.scannerwork/
+sonar-project.properties
+.sonarlint/
+
+# Android Profiling
+*.hprof
+
+# Keystore files
+*.jks
+*.keystore
+!debug.keystore
+
+# Properties files
+*.properties
+!gradle-wrapper.properties
+api.properties
+secrets.properties
+signing.properties
+keystore.properties
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Log Files
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ
+.idea/codeStyles/
+.idea/runConfigurations.xml
+.idea/vcs.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/kotlinc.xml
+.idea/inspectionProfiles/
+
+# VS Code
+.vscode/
+
+# CMake
+cmake-build-*/
+CMakeLists.txt.user
+
+# Release/Production Specific
+/release
+*.release
+
+# Temporary files
+*~
+*.tmp
+*.bak
+*.swp
+
+# Generated files by buck
+buck-out/
+.buckconfig
+.buckversion
+.fakebuckversion
+
+# Flutter/Dart/Pub related (si el proyecto incluye Flutter)
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Firebase config files (además de google-services.json)
+firebase_options.dart
+.firebase/
+firebase.json
+.firebaserc
+
+# Test coverage
+coverage/
+*.coverage
+.testCoverage
+test-results/
+reports/
+
+# Proguard files generados
+proguard/
+
+# Archivos de configuración generados por el sistema
+*.ipr
+*.iws
+
+# Directorios de recursos generados
+**/*/res/*/generated/
+
+# Archivos de configuración específicos del proyecto
+app/config/
+config.json
+settings.json
+
+# Archivos de dependencias generados
+*.lock
+pubspec.lock
+yarn.lock
+package-lock.json

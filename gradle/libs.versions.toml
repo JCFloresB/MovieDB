@@ -1,0 +1,152 @@
+[versions]
+#kotlin and build tools
+agp = "8.6.0"
+kotlin = "1.9.0"
+plugin-ksp-version = "1.9.0-1.0.12"
+
+#AndroidX
+coreKtx = "1.15.0"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+navigationCompose = "2.8.3"
+pagingRuntimeKtx = "3.2.0"
+roomVersion = "2.6.1"
+datastore = "1.0.0"
+
+#Compose
+composeBom = "2024.04.01"
+lifecycleRuntimeCompose = "2.7.0"
+composeMaterial = "1.5.4"
+
+#Networking
+retrofit = "2.9.0"
+coilVersion = "2.5.0"
+loggingInterceptor = "4.12.0"
+converterGson = "2.9.0"
+gson = "2.10.1"
+kotlinxSerializationJson = "1.5.0"
+
+#Firebase
+firebase-bom = "32.7.0"
+google-services = "4.4.0"
+playServicesSafetynet = "18.1.0"
+google-auth = "20.7.0"
+facebook-auth = "16.3.0"
+
+#Logging
+timber = "5.0.1"
+
+#Dependency injection
+androidx-hilt-dagger = "1.2.0"
+hilt-navigation-compose = "1.1.0"
+com-google-dagger = "2.50"
+
+#Testing
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+
+[libraries]
+#AndroidX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingRuntimeKtx" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingRuntimeKtx" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
+room = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
+room-paging = { module = "androidx.room:room-paging", version.ref = "roomVersion" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
+androidx-datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+
+#Compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "composeMaterial" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+#Networking
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+coil = { module = "io.coil-kt:coil", version.ref = "coilVersion" }
+coil-base = { module = "io.coil-kt:coil-base", version.ref = "coilVersion" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilVersion" }
+coil-compose-base = { module = "io.coil-kt:coil-compose-base", version.ref = "coilVersion" }
+coil-gif = { module = "io.coil-kt:coil-gif", version.ref = "coilVersion" }
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coilVersion" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+# Firebase
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
+firebase-auth = { module = "com.google.firebase:firebase-auth-ktx" }
+google-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "google-auth" }
+facebook-auth = { group = "com.facebook.android", name = "facebook-login", version.ref = "facebook-auth" }
+play-services-safetynet = { group = "com.google.android.gms", name = "play-services-safetynet", version.ref = "playServicesSafetynet" }
+
+#Logging
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+#Dpendenci injection
+androidx-hilt-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidx-hilt-dagger" }
+com-google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "com-google-dagger" }
+com-google-dagger-hilt-androidx-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidx-hilt-dagger" }
+com-google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "com-google-dagger" }
+com-google-dagger-hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "com-google-dagger" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+#Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+
+[bundles]
+compilers-kapt-hilt = [
+    "com-google-dagger-hilt-android-compiler",
+    "com-google-dagger-hilt-androidx-compiler"
+]
+
+compilers-kapt-room = [
+    "room-compiler",
+]
+
+layer-ui = [
+    "androidx-core-ktx",
+    "androidx-activity-compose",
+    "androidx-navigation-compose",
+    "androidx-ui",
+    "androidx-ui-graphics",
+    "androidx-ui-tooling-preview",
+    "androidx-material3",
+    "com-google-dagger-hilt-android",
+    "androidx-hilt-hilt-navigation-compose",
+    "timber",
+    "retrofit",
+    "converter-gson",
+    "logging-interceptor",
+    "gson",
+    "room",
+    "room-paging",
+    "androidx-paging-compose",
+    "androidx-paging-runtime-ktx",
+    "coil-compose",
+    "kotlinx-serialization-json",
+    "androidx-lifecycle-runtime-compose",
+]
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+com-google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "com-google-dagger" }
+com-google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "plugin-ksp-version" }
+org-jetbrains-kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }
+
